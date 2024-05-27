@@ -72,7 +72,6 @@ CREATE TABLE notas (
     FOERIGN KEY (id_alumno) REFERENCES alumno(id)
 );
 
-*NOTA: realmente este script no lo he ejecutado en la consola de comandos, ya que con las migraciones se crean automáticamente las tablas en la base de datos. Como he comentado antes, he comenzado con pocos campos y posteriormente cuando ya me manejaba con el código he añadido más campos a las tablas. A continuación voy a poner las órdenes que he usado para modificar las tablas y añadir los campos necesarios.
 
 ALTER TABLE alumnos ADD email VARCHAR(255);
 ALTER TABLE alumnos ADD telefono VARCHAR(255);
